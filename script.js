@@ -68,7 +68,6 @@ var a=new Date();
         document.getElementById('year').value=a.getFullYear();
         document.getElementById('hour').value=a.getHours();
         document.getElementById('minutes').value=a.getMinutes();
-
 }
 
 
