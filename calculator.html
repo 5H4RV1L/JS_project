@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .bdy {
+            height: 501px;
+            width:400px; 
+            background-color: rgb(176, 233, 255); 
+            margin-top: 100px;
+            justify-self: center;
+            padding:5px; 
+            box-sizing: border-box;
+            border:0px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px 5px gray;
+        }
+
+        .dis {
+            height: 75px;
+            width: 62%;
+            font-size:55px;
+            font-weight: bold;
+            background-color: white;
+            border: 2px solid rgb(130, 219, 255);
+            color: rgb(91, 91, 91);
+            float: left;
+            text-align: right;
+            margin: 9px;
+            margin-bottom: 0px;
+            padding-right: 5px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 3px 2px rgb(130, 219, 255);
+        }
+
+        .btn {
+            height: 76px;
+            width: 76px;
+            float: left;
+            background-color: rgba(96, 210, 255, 0.727);
+            border: 0px solid rgb(130, 219, 255);
+            color:rgb(91, 91, 91);
+            text-align: center;
+            font-size: 55px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin: 10.5px;
+            box-shadow: 0px 0px 7px 1px rgb(0, 176, 246);
+        }
+
+        .btn :hover{
+            cursor: pointer;
+            color: rgba(96, 210, 255, 0.727) ;
+            background-color: rgb(91, 91, 91);
+        }
+        
+    </style>
+</head>
+<body style="background-color: rgb(37, 37, 37); display: grid;">
+    <div class="bdy">
+        <input type="text" readonly class="dis" id="op">
+        <button onclick="op.value=''" class="btn" style="margin-bottom: 10.5px; width: 95px;">AC</button>
+
+        <button onclick="op.value+='7'" class="btn">7</button>
+        <button onclick="op.value+='8'" class="btn">8</button>
+        <button onclick="op.value+='9'" class="btn">9</button>
+        <button onclick="op.value+='/'" class="btn">/</button>
+
+        <button onclick="op.value+='4'" class="btn">4</button>
+        <button onclick="op.value+='5'" class="btn">5</button>
+        <button onclick="op.value+='6'" class="btn">6</button>
+        <button onclick="op.value+='*'" class="btn">*</button>
+
+        <button onclick="op.value+='1'" class="btn">1</button>
+        <button onclick="op.value+='2'" class="btn">2</button>
+        <button onclick="op.value+='3'" class="btn">3</button>
+        <button onclick="op.value+='-'" class="btn">-</button>
+
+        <button onclick="op.value+='.'" class="btn">.</button>
+        <button onclick="op.value+='0'" class="btn">0</button>
+        <button onclick="op.value=eval(op.value)" class="btn">=</button>
+        <button onclick="op.value+='+'" class="btn">+</button>
+    </div>        
+</body>
+</html>
