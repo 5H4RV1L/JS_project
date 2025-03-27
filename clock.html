@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style type="text/css">
         ::placeholder{
             color: brown;
@@ -37,77 +36,7 @@
         <input type="text" class="txt" style="font-size: 50px; width: 50px;" readonly placeholder=":">
         <input type="text" class="txt" style="font-size: 50px; width: 100px;" readonly id="minutes">
     </div>
+    <script type="text/javascript" src="script.js"></script>
 
-    <script type="text/javascript">
-        var a=new Date();
-
-        switch(a.getDay()){
-            case 0:
-                day="Sunday";
-                break;
-            case 1:
-                day="Monday";
-                break;
-            case 2:
-                day="Tuesday";
-                break;
-            case 3:
-                day="Wednesday";
-                break;
-            case 4:
-                day="Thursday";
-                break;
-            case 5:
-                day="Friday";
-                break;
-            case 6:
-                day="Saturday";
-        }
-
-        switch(a.getMonth()){
-            case 0:
-                month="January"
-                break;
-            case 1:
-                month="February"
-                break;
-            case 2:
-                month="March"
-                break;
-            case 3:
-                month="April"
-                break;
-            case 4:
-                month="May"
-                break;
-            case 5:
-                month="June"
-                break;
-            case 6:
-                month="July"
-                break;
-            case 7:
-                month="August"
-                break;
-            case 8:
-                month="September"
-                break;
-            case 9:
-                month="October"
-                break;
-            case 10:
-                month="November"
-                break;
-            case 11:
-                month="December"
-        }
-
-        document.getElementById('day').value=day;
-        document.getElementById('date').value=a.getDate();
-        document.getElementById('month').value=month;
-        document.getElementById('year').value=a.getFullYear();
-        document.getElementById('hour').value=a.getHours();
-        document.getElementById('minutes').value=a.getMinutes();
-    </script>
 </body>
 </html>
