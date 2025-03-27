@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+    	<meta charset="UTF-8"> 
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    	<title>Design Stopwatch using HTML CSS and JavaScript</title> 
+    	<style type="text/css">
+            body { 
+            	padding: 0; 
+            	margin: 0; 
+            	font-family: verdana; 
+            } 
+
+            .container { 
+            	display: flex; 
+            	flex-direction: column; 
+            	justify-content: center; 
+            	align-items: center; 
+            	width: 100%; 
+            	height: 100vh; 
+            	background: rgba(199, 156, 228, 0.705); 
+            } 
+
+            .digit { 
+            	font-size: 100px; 
+            	color: blueviolet; 
+                font-weight: bolder;
+                text-shadow: 0px 0px 8px rgb(94, 32, 151);
+            } 
+
+            .txt { 
+            	font-size: 20px; 
+            	color: blueviolet; 
+                text-shadow: 0px 0px 5px rgb(94, 32, 151);
+            } 
+
+            #buttons { 
+            	margin-top: 50px; 
+            } 
+
+            .btn { 
+            	height: 55px;
+                width: 130px;
+                float: left;
+                border-radius: 20px;
+                font-size: 30px;
+                font-weight: bolder;
+                color: blueviolet;
+                text-align: center;
+                border: none;
+                justify-self: center;
+                margin-left: 35px;
+                margin-right: 10px;
+                box-shadow: 0px 0px 8px rgb(94, 32, 151);
+                background-color: rgb(255, 222, 255);
+            } 
+        </style> 
+    </head> 
+
+    <body> 
+    	<div class="container"> 
+    		<div id="time"> 
+    			<span class="digit" id="hr">00</span> 
+    			<span class="txt">Hr</span> 
+    			<span class="digit" id="min">00</span> 
+    			<span class="txt">Min</span> 
+    			<span class="digit" id="sec"> 00</span> 
+    			<span class="txt">Sec</span> 
+    			<span class="digit" id="count"> 00</span> 
+    		</div> 
+
+    		<div id="buttons"> 
+    			<button class="btn" id="start">Start</button> 
+    			<button class="btn" id="stop">Stop</button> 
+    			<button class="btn" id="reset">Reset</button> 
+    		</div> 
+    	</div> 
+
+		<script type="text/javascript" src="script.js"></script>
+
+    </body> 
+</html>
