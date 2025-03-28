@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(desert.jpg);
+            background-size: 100%;
+            display: grid;
+            justify-content: center;
+        }
+        h1{
+            font-size: 80px;
+            color: peru;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .bigBox{
+            height: 440px;
+            width: 1440px;
+            display: flex;
+        }
+        .box{
+            height: 100%;
+            width: 480px;
+            border: 1px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .base{
+            height: 20px;
+            width: 400px;
+            background-color: sienna;
+            border: 2px solid;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+        .block{
+            height: 80px;
+            background-image: url(wall.jpg);
+            background-color: chocolate;
+            border: 1px solid;
+            border-bottom: 0px;
+            background-size: contain;
+        }
+    </style>
+    <script type="text/javascript" src="gameScript.js"></script>
+</head>
+<body>
+    <h1>TOWER OF HANOI</h1>
+    <h2>Move all the blocks from Base 1 to 3.<br>You can only move one disk at a time.<br>A bigger disk can't be placed on top of a smaller disk.</h2>
+    <div class="bigBox">
+        <div class="box" id="box1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="base">Base 1</div>
+            <div class="block" id="block4" style="width: 330px;" draggable="true" ondragstart="drag(event)"></div>
+            <div class="block" id="block3" style="width: 260px;" draggable="true" ondragstart="drag(event)"></div>
+            <div class="block" id="block2" style="width: 190px;" draggable="true" ondragstart="drag(event)"></div>
+            <div class="block" id="block1" style="width: 120px;" draggable="true" ondragstart="drag(event)"></div>
+        </div>
+        <div class="box" id="box2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="base">Base 2</div>
+        </div>
+        <div class="box" id="box3" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="base">Base 3</div>
+        </div>
+    </div>
+</body>
+</html>
